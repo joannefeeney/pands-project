@@ -6,9 +6,18 @@
 # Performs any other analysis you think is appropriate  
 
 # Code source: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+# Code source: https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
+# import numpy as np
+# import matplotlib.pyplot as plt
 import pandas as pd
+# ADD IMPORT SEABORN HERE ??
 
 data = pd.read_csv("irisdata.csv")
+
+# adding column name to the respective columns
+# Code source:
+# https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/
+data.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidthth', 'Species']
 
 # setosa data 
 # print(data[0:49])
@@ -22,12 +31,6 @@ data = pd.read_csv("irisdata.csv")
 # you can also save it in a variable for further use in analysis
 # sliced_data=data[50:99]
 # print(sliced_data)
-
-# adding column name to the respective columns
-# Code source:
-# https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/
-data.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidthth', 'Species']
-
 
 # displaying only certain columns
 # save it in a another variable named "specific_data" e.g.
@@ -45,4 +48,9 @@ median_data = data["SepalLength"].median()
 
 print(f"Data for the length of all iris species: \n""Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data)
 '''
+# extracting minimum and maximum from a column e.g.
+# min_data=data["SepalLength"].min()
+# max_data=data["SepalLength"].max()
+# print("Minimum:",min_data, "\nMaximum:", max_data)
 
+data.head()
