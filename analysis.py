@@ -5,34 +5,20 @@
 # Outputs a scatter plot of each pair of variables 
 # Performs any other analysis you think is appropriate  
 
-# Opening and reading the dataset
-# https://www.w3schools.com/python/python_file_open.asp
-f = open("iris.data", "r")
-# print(f.read())
+# Code source: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
+import pandas as pd
 
-# Code source: Pedregosa et al.
-import matplotlib.pyplot as plt
-import numpy as np
+data = pd.read_csv("irisdata.csv")
 
-# import the data set
-iris = f
-X = iris.data[:, :2]  # we only take the first two features
-y = iris.target
+#setosa data 
+# print(data[0:49])
 
-x_min, x_max = X[:, 0].min() - 0.5, X[:, 0].max() + 0.5
-y_min, y_max = X[:, 1].min() - 0.5, X[:, 1].max() + 0.5
+#versicolor data 
+# print(data[50:99])
 
-plt.figure(2, figsize=(8, 6))
-plt.clf()
+#verginica data 
+# print(data[100:151])
 
-# Plot the training points
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1, edgecolor="k")
-plt.xlabel("Sepal length")
-plt.ylabel("Sepal width")
-
-plt.xlim(x_min, x_max)
-plt.ylim(y_min, y_max)
-plt.xticks(())
-plt.yticks(())
-
-plt.show()
+# you can also save it in a variable for further use in analysis
+sliced_data=data[50:99]
+print(sliced_data)
