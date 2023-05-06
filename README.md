@@ -27,3 +27,6 @@ http://archive.ics.uci.edu/ml/datasets/Iris
 Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science., Last accessed 06/05/2023
 
 Santos, Rafael (2019) [http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeStory-Iris.html], Last accessed 06/05/2023
+
+Data Camp Tutorial [https://www.datacamp.com/tutorial/machine-learning-in-r], Last accessed 06/05/2023
+
