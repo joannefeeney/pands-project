@@ -3,6 +3,21 @@
 This project concerns the Fisher’s Iris data set. I have researched the data set
 and written documentation and code to investigate it. 
 
+The data set contains 3 species of iris:
+* setosa
+* versicolor
+* virginica
+
+
+It contains data for 50 examples of each species including:
+* sepal length in cm
+* sepal width in cm
+* petal length in cm
+* petal width in cm
+
+
+
+
 ### The dataset is available here:
 
 UC Irvine Machine Learning Repository. Iris data set.
