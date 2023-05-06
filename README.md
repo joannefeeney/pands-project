@@ -32,4 +32,4 @@ Data Camp Tutorial [https://www.datacamp.com/tutorial/machine-learning-in-r], La
 
 Pedregosa et al.,Scikit-learn: Machine Learning in Python,  JMLR 12, pp. 2825-2830, (2011) [https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html], Last accessed 06/05/2023
 
-Geeksforgeeks [https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/], Last accessed 06/05/2023
+Geeksforgeeks [https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/], [https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/], [https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/], [https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/], [https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/], Last accessed 06/05/2023
