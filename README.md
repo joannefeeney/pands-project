@@ -30,3 +30,5 @@ Santos, Rafael (2019) [http://www.lac.inpe.br/~rafael.santos/Docs/CAP394/WholeSt
 
 Data Camp Tutorial [https://www.datacamp.com/tutorial/machine-learning-in-r], Last accessed 06/05/2023
 
+Pedregosa et al.,Scikit-learn: Machine Learning in Python,  JMLR 12, pp. 2825-2830, (2011) [https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html], Last accessed 06/05/2023
+
