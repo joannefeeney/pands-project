@@ -7,17 +7,17 @@
 
 # Code source: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 # Code source: https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
-# import numpy as np
-# import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd
-# ADD IMPORT SEABORN HERE ??
+import seaborn as sns 
 
-data = pd.read_csv("irisdata.csv")
+df = pd.read_csv("irisdata.csv")
 
 # adding column name to the respective columns
 # Code source:
 # https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/
-data.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidthth', 'Species']
+df.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'Species']
 
 # setosa data 
 # print(data[0:49])
@@ -53,4 +53,26 @@ print(f"Data for the length of all iris species: \n""Sum:",sum_data, "\nMean:", 
 # max_data=data["SepalLength"].max()
 # print("Minimum:",min_data, "\nMaximum:", max_data)
 
-data.head()
+# Code Source:
+# https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
+# Relationship between the sepal length and sepal width
+'''
+sns.scatterplot(x='SepalLength', y='SepalWidth',
+                hue='Species', data=df, )
+# Placement of legend
+# Source Code:
+# https://www.statology.org/matplotlib-legend-position/#:~:text=To%20change%20the%20position%20of%20
+# a%20legend%20in%20Matplotlib%2C%20you,legend()%20function.&text=The%20default%20location%20is%20%E
+# 2%80%9Cbest,avoids%20covering%20any%20data%20points.
+plt.legend(bbox_to_anchor=(1, 1), loc=1)
+ 
+plt.show()
+'''
+# Relationship between petal length and petal width
+sns.scatterplot(x='PetalLength', y='PetalWidth',
+                hue='Species', data=df, )
+ 
+# Placing Legend inside
+plt.legend(loc='lower right')
+ 
+plt.show()
