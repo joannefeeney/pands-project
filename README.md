@@ -34,6 +34,7 @@ http://archive.ics.uci.edu/ml/datasets/Iris
 * Next the code outputs the minium and maximum value for each species of iris
 * From this information, we can see that in general, teh iris virginica species appears to be the largest and 
   the iris setosa and versicolor are closer in size
+* The program then runs a two scatter plots which display the petal length/width and also the sepal length/width
   
 
 
