@@ -68,6 +68,7 @@ plt.legend(bbox_to_anchor=(1, 1), loc=1)
  
 plt.show()
 '''
+'''
 # Relationship between petal length and petal width
 sns.scatterplot(x='PetalLength', y='PetalWidth',
                 hue='Species', data=df, )
@@ -75,4 +76,73 @@ sns.scatterplot(x='PetalLength', y='PetalWidth',
 # Placing Legend inside
 plt.legend(loc='lower right')
  
+plt.show()
+'''
+# Four histograms allow seeing the distribution of data for various columns
+'''
+fig, axes = plt.subplots(2, 2, figsize=(10,10))
+ 
+axes[0,0].set_title("Sepal Length")
+axes[0,0].hist(df['SepalLength'], bins=7)
+ 
+axes[0,1].set_title("Sepal Width")
+axes[0,1].hist(df['SepalWidth'], bins=5)
+ 
+axes[1,0].set_title("Petal Length")
+axes[1,0].hist(df['PetalLength'], bins=6)
+ 
+axes[1,1].set_title("Petal Width")
+axes[1,1].hist(df['PetalWidth'], bins=6)
+
+plt.show()
+'''
+
+# Code Source: 
+# https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
+# Histogram showing sepal length
+
+'''
+plt.figure(figsize = (10, 7))
+x = df["SepalLength"]
+  
+plt.hist(x, bins = 20, color = "green")
+plt.title("Sepal Length in cm")
+plt.xlabel("Sepal_Length_cm")
+plt.ylabel("Count")
+
+# Histogram showing sepal width
+
+plt.figure(figsize = (10, 7))
+x = df.SepalWidth
+  
+plt.hist(x, bins = 20, color = "green")
+plt.title("Sepal Width in cm")
+plt.xlabel("Sepal_Width_cm")
+plt.ylabel("Count")
+
+plt.show()
+'''
+
+# Source Code:
+# https://pythonguides.com/python-write-variable-to-file/
+# Creating and writing to a file called project.txt
+# This code creates a set variable named "datasetname" with the value "Iris Dataset"
+'''
+datasetname = {"Iris Dataset"}
+# This line opens a file named "project.txt" in write mode (w)
+file = open("project.txt", "w")
+# This line uses string formatting to write the "datasetname" variable and its value to the file
+file.write("%s = %s\n" %("datasetname",datasetname))
+# This line closes the "project.txt" file
+file.close()
+'''
+
+from matplotlib import image as mpimg
+ 
+plt.title("Sheep Image")
+plt.xlabel("X pixel scaling")
+plt.ylabel("Y pixels scaling")
+ 
+image = mpimg.imread("sheep.png")
+plt.imshow(image)
 plt.show()
