@@ -36,10 +36,10 @@ http://archive.ics.uci.edu/ml/datasets/Iris
   the iris setosa and versicolor are closer in size.
 * The program then runs a two scatter plots which display the petal length/width and also the sepal length/width.
   These scatter plots appear in two separate figures, one is generated first and hten the second is generated when the first is closed.
-  They allow for wasier viewing of the diffrences in length/width of these species.
-  
-  
-
+  They allow for easier viewing of the differences in length/width of these species.
+* The next section of code outputs four different histograms which display the diffrence in height/width for
+  sepal length, sepal width,  petal length and petal width, while also displaying the frequency of such on the y axis.
+  From this output, we can see for example that the sepal length of all species has the highest frequency at approximately 5.5cm in length.
 
 ### References:
 
