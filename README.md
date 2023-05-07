@@ -3,6 +3,8 @@
 This project concerns the Fisher’s Iris data set. I have researched the data set
 and written documentation and code to investigate it. 
 
+C:\Users\Joanne Feeney\OneDrive\Desktop\pands\pands-project\irisx3.png
+
 The data set contains 3 species of iris:
 * setosa
 * versicolor
