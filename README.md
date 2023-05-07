@@ -53,4 +53,4 @@ Dhanalakshmi Srivani, Karpuram [https://www.analyticsvidhya.com/blog/2022/06/iri
 
 Rishi, Rishikesh Kumar, Tutorialspoint [https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#], Last accessed 07/05/2023
 
-Stack overflow [https://stackoverflow.com/questions/50088007/print-specific-rows-and-columns-in-pandas], Last accessed 07/05/2023
+Stack overflow [https://stackoverflow.com/questions/50088007/print-specific-rows-and-columns-in-pandas], [https://stackoverflow.com/questions/27405483/how-to-loop-over-grouped-pandas-dataframe], Last accessed 07/05/2023
