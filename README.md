@@ -42,3 +42,5 @@ Statology [https://www.statology.org/matplotlib-legend-position/#:~:text=To%20ch
 Kumar, Bijay, Python guides [https://pythonguides.com/python-write-variable-to-file/], Last accessed 07/05/2023
 
 Dhanalakshmi Srivani, Karpuram [https://www.analyticsvidhya.com/blog/2022/06/iris-flowers-classification-using-machine-learning/] (used for image of iris'), Last accessed 07/05/2023
+
+Rishi, Rishikesh Kumar, Tutorialspoint [https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#], Last accessed 07/05/2023
