@@ -52,3 +52,5 @@ Kumar, Bijay, Python guides [https://pythonguides.com/python-write-variable-to-f
 Dhanalakshmi Srivani, Karpuram [https://www.analyticsvidhya.com/blog/2022/06/iris-flowers-classification-using-machine-learning/] (used for image of iris'), Last accessed 07/05/2023
 
 Rishi, Rishikesh Kumar, Tutorialspoint [https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#], Last accessed 07/05/2023
+
+Stack overflow [https://stackoverflow.com/questions/50088007/print-specific-rows-and-columns-in-pandas], Last accessed 07/05/2023
