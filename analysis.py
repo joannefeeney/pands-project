@@ -21,10 +21,8 @@ df.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'Species'
 
 # setosa data 
 # print(data[0:49])
-
 # versicolor data 
 # print(data[50:99])
-
 # verginica data 
 # print(data[100:151])
 
@@ -36,29 +34,60 @@ df.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'Species'
 # save it in a another variable named "specific_data" e.g.
 # specific_data=data[["SepalLength","Species"]]
 # data[["column_name1","column_name2","column_name3"]]
-# now we will print the first 10 columns of the specific_data dataframe e.g.
+# print the first 10 columns of the specific_data dataframe e.g.
 # print(specific_data.head(10))
 
+# Code Source: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 # calculating sum, mean and mode of a particular column
-# data["column_name"].sum()
-''' 
-sum_data = data["SepalLength"].sum()
-mean_data = data["SepalLength"].mean()
-median_data = data["SepalLength"].median()
-
-print(f"Data for the length of all iris species: \n""Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data)
 '''
-# extracting minimum and maximum from a column e.g.
-# min_data=data["SepalLength"].min()
-# max_data=data["SepalLength"].max()
-# print("Minimum:",min_data, "\nMaximum:", max_data)
+sum_data1 = df["SepalLength"].sum()
+mean_data1 = df["SepalLength"].mean()
+median_data1 = df["SepalLength"].median()
 
+print(f"Data for the sepal length of all iris species: \n""Sum:",sum_data1, "\nMean:", mean_data1, "\nMedian:",median_data1, "\n")
+
+sum_data2 = df["SepalWidth"].sum()
+mean_data2 = df["SepalWidth"].mean()
+median_data2 = df["SepalWidth"].median()
+
+print(f"Data for the sepal width of all iris species: \n""Sum:",sum_data2, "\nMean:", mean_data2, "\nMedian:",median_data2, "\n")
+
+sum_data3 = df["PetalLength"].sum()
+mean_data3 = df["PetalLength"].mean()
+median_data3 = df["PetalLength"].median()
+
+print(f"Data for the petal length of all iris species: \n""Sum:",sum_data3, "\nMean:", mean_data3, "\nMedian:",median_data3, "\n")
+
+sum_data4 = df["PetalWidth"].sum()
+mean_data4 = df["PetalWidth"].mean()
+median_data4 = df["PetalWidth"].median()
+
+print(f"Data for the petal width of all iris species: \n""Sum:",sum_data4, "\nMean:", mean_data4, "\nMedian:",median_data4, "\n")
+GOOD
+'''
+'''
+# extracting minimum and maximum from a column
+# Code Source above and also used: 
+# https://stackoverflow.com/questions/27405483/how-to-loop-over-grouped-pandas-dataframe
+
+species_groups = df.groupby('Species')
+
+for species, data in species_groups:
+    print(f"Minimum and Maximum values for the {species} species:", "\n")
+    print(f"Sepal Length: min = {data['SepalLength'].min()}, max = {data['SepalLength'].max()}")
+    print(f"Sepal Width: min = {data['SepalWidth'].min()}, max = {data['SepalWidth'].max()}")
+    print(f"Petal Length: min = {data['PetalLength'].min()}, max = {data['PetalLength'].max()}")
+    print(f"Petal Width: min = {data['PetalWidth'].min()}, max = {data['PetalWidth'].max()}")
+    print()
+GOOD
+'''
+'''
 # Code Source:
 # https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 # Relationship between the sepal length and sepal width
-'''
 sns.scatterplot(x='SepalLength', y='SepalWidth',
                 hue='Species', data=df, )
+
 
 # Source Code:
 # https://www.statology.org/matplotlib-legend-position/#:~:text=To%20change%20the%20position%20of%20
@@ -68,18 +97,21 @@ sns.scatterplot(x='SepalLength', y='SepalWidth',
 plt.legend(bbox_to_anchor=(1, 1), loc=1)
  
 plt.show()
+GOOD
 '''
-'''
-# Relationship between petal length and petal width
+# Relationship between  length and width via scatter plot
 sns.scatterplot(x='PetalLength', y='PetalWidth',
                 hue='Species', data=df, )
- 
 # Placing Legend inside
+plt.legend(loc='lower right')
+
+plt.show()
+
+sns.scatterplot(x='SepalLength', y='SepalWidth',
+                hue='Species', data=df, )
 plt.legend(loc='lower right')
  
 plt.show()
-'''
-# Four histograms allow seeing the distribution of data for various columns
 '''
 fig, axes = plt.subplots(2, 2, figsize=(10,10))
  
@@ -100,6 +132,9 @@ plt.show()
 
 # Code Source: https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 # Histogram showing sepal length
+# Save the histogram e.g.
+# plt.savefig('hist.png') 
+# Code Source: https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#
 
 '''
 plt.figure(figsize = (10, 7))
