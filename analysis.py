@@ -3,10 +3,10 @@
 # This program outputs a summary of each variable to a single text file
 # Saves a histogram of each variable to png files, and  
 # Outputs a scatter plot of each pair of variables 
-# Performs any other analysis you think is appropriate  
 
 # Code source: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 # Code source: https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/
+# Adding required libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -59,11 +59,12 @@ print(f"Data for the length of all iris species: \n""Sum:",sum_data, "\nMean:", 
 '''
 sns.scatterplot(x='SepalLength', y='SepalWidth',
                 hue='Species', data=df, )
-# Placement of legend
+
 # Source Code:
 # https://www.statology.org/matplotlib-legend-position/#:~:text=To%20change%20the%20position%20of%20
 # a%20legend%20in%20Matplotlib%2C%20you,legend()%20function.&text=The%20default%20location%20is%20%E
 # 2%80%9Cbest,avoids%20covering%20any%20data%20points.
+# Placement of legend
 plt.legend(bbox_to_anchor=(1, 1), loc=1)
  
 plt.show()
@@ -97,8 +98,7 @@ axes[1,1].hist(df['PetalWidth'], bins=6)
 plt.show()
 '''
 
-# Code Source: 
-# https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
+# Code Source: https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 # Histogram showing sepal length
 
 '''
@@ -123,8 +123,7 @@ plt.ylabel("Count")
 plt.show()
 '''
 
-# Source Code:
-# https://pythonguides.com/python-write-variable-to-file/
+# Code Source: https://pythonguides.com/python-write-variable-to-file/
 # Creating and writing to a file called project.txt
 # This code creates a set variable named "datasetname" with the value "Iris Dataset"
 '''
@@ -136,13 +135,17 @@ file.write("%s = %s\n" %("datasetname",datasetname))
 # This line closes the "project.txt" file
 file.close()
 '''
-
+# Code Source: https://www.askpython.com/python/examples/display-images-using-python
+# Adding image of iris'
+'''
 from matplotlib import image as mpimg
  
-plt.title("Sheep Image")
+plt.title("Iris Image")
 plt.xlabel("X pixel scaling")
 plt.ylabel("Y pixels scaling")
  
-image = mpimg.imread("sheep.png")
+image = mpimg.imread("irisx3.png")
 plt.imshow(image)
 plt.show()
+'''
+
