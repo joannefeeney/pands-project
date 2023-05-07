@@ -35,3 +35,5 @@ Pedregosa et al.,Scikit-learn: Machine Learning in Python,  JMLR 12, pp. 2825-28
 Geeksforgeeks [https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/], [https://www.geeksforgeeks.org/add-column-names-to-dataframe-in-pandas/], [https://www.geeksforgeeks.org/plotting-graph-for-iris-dataset-using-seaborn-and-matplotlib/], [https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/], [https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/], Last accessed 06/05/2023
 
 Statology [https://www.statology.org/matplotlib-legend-position/#:~:text=To%20change%20the%20position%20of%20a%20legend%20in%20Matplotlib%2C%20you,legend()%20function.&text=The%20default%20location%20is%20%E2%80%9Cbest,avoids%20covering%20any%20data%20points.], Last accessed 06/05/2023
+
+Kumar, Bijay, Python guides, [https://pythonguides.com/python-write-variable-to-file/], Last accessed 07/05/2023
