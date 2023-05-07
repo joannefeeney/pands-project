@@ -85,21 +85,12 @@ GOOD
 # Code Source:
 # https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 # Relationship between the sepal length and sepal width
-sns.scatterplot(x='SepalLength', y='SepalWidth',
-                hue='Species', data=df, )
-
-
-# Source Code:
+# Code Source:
 # https://www.statology.org/matplotlib-legend-position/#:~:text=To%20change%20the%20position%20of%20
 # a%20legend%20in%20Matplotlib%2C%20you,legend()%20function.&text=The%20default%20location%20is%20%E
 # 2%80%9Cbest,avoids%20covering%20any%20data%20points.
 # Placement of legend
-plt.legend(bbox_to_anchor=(1, 1), loc=1)
- 
-plt.show()
-GOOD
-'''
-# Relationship between  length and width via scatter plot
+
 sns.scatterplot(x='PetalLength', y='PetalWidth',
                 hue='Species', data=df, )
 # Placing Legend inside
@@ -112,7 +103,11 @@ sns.scatterplot(x='SepalLength', y='SepalWidth',
 plt.legend(loc='lower right')
  
 plt.show()
+GOOD
 '''
+'''
+# histograms showing lengths and widths for all species
+# Code Source: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 fig, axes = plt.subplots(2, 2, figsize=(10,10))
  
 axes[0,0].set_title("Sepal Length")
@@ -128,15 +123,15 @@ axes[1,1].set_title("Petal Width")
 axes[1,1].hist(df['PetalWidth'], bins=6)
 
 plt.show()
+GOOD
 '''
-
+'''
 # Code Source: https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 # Histogram showing sepal length
 # Save the histogram e.g.
 # plt.savefig('hist.png') 
 # Code Source: https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#
 
-'''
 plt.figure(figsize = (10, 7))
 x = df["SepalLength"]
   
