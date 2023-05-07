@@ -28,13 +28,16 @@ http://archive.ics.uci.edu/ml/datasets/Iris
 
 ### Results:
 
-* First my python code outputs the details of the sum, mean and median of the combined iris data (all 3 species)
+* First my python code outputs the details of the sum, mean and median of the combined iris data (all 3 species).
 * From the information that the program has calculated for us, we can see that there is a quite a difference in size (both length and width) 
-  between the petals and the sepals
-* Next the code outputs the minium and maximum value for each species of iris
-* From this information, we can see that in general, teh iris virginica species appears to be the largest and 
-  the iris setosa and versicolor are closer in size
-* The program then runs a two scatter plots which display the petal length/width and also the sepal length/width
+  between the petals and the sepals.
+* Next the code outputs the minium and maximum value for each species of iris.
+* From this information, we can see that in general, the iris virginica species appears to be the largest and 
+  the iris setosa and versicolor are closer in size.
+* The program then runs a two scatter plots which display the petal length/width and also the sepal length/width.
+  These scatter plots appear in two separate figures, one is generated first and hten the second is generated when the first is closed.
+  They allow for wasier viewing of the diffrences in length/width of these species.
+  
   
 
 
