@@ -122,16 +122,15 @@ axes[1,0].hist(df['PetalLength'], bins=6)
 axes[1,1].set_title("Petal Width")
 axes[1,1].hist(df['PetalWidth'], bins=6)
 
+# Save the histogram
+# Code Source: https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#
+plt.savefig('histogram1.png') 
 plt.show()
 GOOD
 '''
 '''
 # Code Source: https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 # Histogram showing sepal length
-# Save the histogram e.g.
-# plt.savefig('hist.png') 
-# Code Source: https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#
-
 plt.figure(figsize = (10, 7))
 x = df["SepalLength"]
   
@@ -140,8 +139,12 @@ plt.title("Sepal Length in cm")
 plt.xlabel("Sepal_Length_cm")
 plt.ylabel("Count")
 
-# Histogram showing sepal width
+# Code Source: https://stackoverflow.com/questions/72457668/how-do-i-save-multiple-
+# histograms-to-different-separate-files
+# Save the histogram
+plt.savefig('histogram2.png') 
 
+# Histogram showing sepal width
 plt.figure(figsize = (10, 7))
 x = df.SepalWidth
   
@@ -150,13 +153,40 @@ plt.title("Sepal Width in cm")
 plt.xlabel("Sepal_Width_cm")
 plt.ylabel("Count")
 
+# Save the histogram
+plt.savefig('histogram3.png') 
+
+# Histogram showing petal length
+plt.figure(figsize = (10, 7))
+x = df.PetalLength
+  
+plt.hist(x, bins = 20, color = "red")
+plt.title("Petal Length in cm")
+plt.xlabel("Petal_Length_cm")
+plt.ylabel("Count")
+
+# Save the histogram
+plt.savefig('histogram4.png') 
+
+# Histogram showing petal width
+plt.figure(figsize = (10, 7))
+x = df.PetalWidth
+  
+plt.hist(x, bins = 20, color = "red")
+plt.title("Petal Width in cm")
+plt.xlabel("Petal_Width_cm")
+plt.ylabel("Count")
+
+# Save the histogram
+plt.savefig('histogram5.png') 
+
 plt.show()
+GOOD
 '''
 
 # Code Source: https://pythonguides.com/python-write-variable-to-file/
 # Creating and writing to a file called project.txt
 # This code creates a set variable named "datasetname" with the value "Iris Dataset"
-'''
 datasetname = {"Iris Dataset"}
 # This line opens a file named "project.txt" in write mode (w)
 file = open("project.txt", "w")
@@ -164,10 +194,9 @@ file = open("project.txt", "w")
 file.write("%s = %s\n" %("datasetname",datasetname))
 # This line closes the "project.txt" file
 file.close()
-'''
+
 # Code Source: https://www.askpython.com/python/examples/display-images-using-python
 # Adding image of iris'
-'''
 from matplotlib import image as mpimg
  
 plt.title("Iris Image")
@@ -177,5 +206,3 @@ plt.ylabel("Y pixels scaling")
 image = mpimg.imread("irisx3.png")
 plt.imshow(image)
 plt.show()
-'''
-
