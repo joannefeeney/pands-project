@@ -39,7 +39,7 @@ df.columns =['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'Species'
 
 # Code Source: https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/
 # calculating sum, mean and mode of a particular column
-'''
+
 sum_data1 = df["SepalLength"].sum()
 mean_data1 = df["SepalLength"].mean()
 median_data1 = df["SepalLength"].median()
@@ -63,9 +63,7 @@ mean_data4 = df["PetalWidth"].mean()
 median_data4 = df["PetalWidth"].median()
 
 print(f"Data for the petal width of all iris species: \n""Sum:",sum_data4, "\nMean:", mean_data4, "\nMedian:",median_data4, "\n")
-GOOD
-'''
-'''
+
 # extracting minimum and maximum from a column
 # Code Source above and also used: 
 # https://stackoverflow.com/questions/27405483/how-to-loop-over-grouped-pandas-dataframe
@@ -79,9 +77,7 @@ for species, data in species_groups:
     print(f"Petal Length: min = {data['PetalLength'].min()}, max = {data['PetalLength'].max()}")
     print(f"Petal Width: min = {data['PetalWidth'].min()}, max = {data['PetalWidth'].max()}")
     print()
-GOOD
-'''
-'''
+
 # Code Source:
 # https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 # Relationship between the sepal length and sepal width
@@ -103,9 +99,7 @@ sns.scatterplot(x='SepalLength', y='SepalWidth',
 plt.legend(loc='lower right')
  
 plt.show()
-GOOD
-'''
-'''
+
 # histograms showing lengths and widths for all species
 # Code Source: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 fig, axes = plt.subplots(2, 2, figsize=(10,10))
@@ -126,9 +120,7 @@ axes[1,1].hist(df['PetalWidth'], bins=6)
 # Code Source: https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#
 plt.savefig('histogram1.png') 
 plt.show()
-GOOD
-'''
-'''
+
 # Code Source: https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
 # Histogram showing sepal length
 plt.figure(figsize = (10, 7))
@@ -181,9 +173,7 @@ plt.ylabel("Count")
 plt.savefig('histogram5.png') 
 
 plt.show()
-GOOD
-'''
-'''
+
 # Code Source: https://www.askpython.com/python/examples/display-images-using-python
 # Adding image of iris'
 from matplotlib import image as mpimg
@@ -195,8 +185,6 @@ plt.ylabel("Y pixels scaling")
 image = mpimg.imread("irisx3.png")
 plt.imshow(image)
 plt.show()
-GOOD
-'''
 
 # Code Source: https://www.tutorialspoint.com/How-to-write-multiple-lines-in-text-file-using-Python
 # Creating and writing to a file called project.txt
@@ -212,7 +200,7 @@ with open("project.txt", "a") as f:
     "with ATU Galway, I will be able to implement many different programs which will make my tasks"
     "in work,\n (many of which are manual) much smoother and will introduce much less room for human error."
     "\n\n Using the Iris data set as a base, it has shown me that I can take even the most basic of data,"
-    "and create many different outputs and ways of reading it. I have completed a lot of research on Google"
+    "and\n create many different outputs and ways of reading it. I have completed a lot of research on Google"
     "whilst figuring out how to so certain aspects of this project\n and I have found so many useful"
     "websites and platforms that can be used to improve my knowledge even after this course is finished.\n\n"
     "In summary, I have not researched anyone else's analysis of this data set as I did not want to"
@@ -226,7 +214,5 @@ with open("project.txt", "a") as f:
     "watch as technology evolves in the future."
    ]
    f.writelines(lines)
-   f.close()
-
 # This line closes the "project.txt" file
-# file.close()
+   f.close()

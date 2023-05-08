@@ -1,0 +1,20 @@
+The well-known Fischers Iris data set can display to anyone new to learning code(such as myself),
+ that you can take basically any clean data set and compare every and each variable.You can create histograms and plots to make the data easier to view and compare.
+ You canadd images to your code and README files to make it look nicer. You can compare only certainparts of the data if you so wish.
+ This piece of basic code that I have written (and copiedfrom certain referenced sources) conveys to me that python code can be used for so many purposes.
+ I work in the tech field currently, but do not have any ICT degree and am completing thiscourse so I can expand my knowledge.
+ I beleive that by the time I have finished this coursewith ATU Galway, I will be able to implement many different programs which will make my tasksin work,
+ (many of which are manual) much smoother and will introduce much less room for human error.
+
+ Using the Iris data set as a base, it has shown me that I can take even the most basic of data,and
+ create many different outputs and ways of reading it. I have completed a lot of research on Googlewhilst figuring out how to so certain aspects of this project
+ and I have found so many usefulwebsites and platforms that can be used to improve my knowledge even after this course is finished.
+
+In summary, I have not researched anyone else's analysis of this data set as I did not want tocloud my own opinion of this data
+ when seeing and working with it for the first time. The code which is present in my project works very well with the iris data set
+ and althoughbasic, the code can be adjusted for more complicated data sets. The outputs could be worked on so
+ that I can produce a histogram/plot/median sum etc. output for each and every variable in the data.I could introduce more complex code which compares
+ many different types of variables and outputthem in many different formats.
+
+ In conclusion, the iris data set has opened my eyes to theendless possibilities that python coding is capable of and I am excited to leanr more and
+watch as technology evolves in the future.
