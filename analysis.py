@@ -202,11 +202,11 @@ GOOD
 # Creating and writing to a file called project.txt
 with open("project.txt", "a") as f:
    lines = ["The well-known Fischers Iris data set can display to anyone new to learning code"
-    "(such as myself),\n that you can take basically any clean data set and compare every variable."
-    "You can create histograms and plots to make the data easier to view an compare.\n You can"
+    "(such as myself),\n that you can take basically any clean data set and compare every and each variable."
+    "You can create histograms and plots to make the data easier to view and compare.\n You can"
     "add images to your code and README files to make it look nicer. You can compare only certain"
     "parts of the data if you so wish.\n This piece of basic code that I have written (and copied"
-    "from certain references sources) conveys to me that python code can be used for so many purposes."
+    "from certain referenced sources) conveys to me that python code can be used for so many purposes."
     "\n I work in the tech field currently, but do not have any ICT degree and am completing this"
     "course so I can expand my knowledge.\n I beleive that by the time I have finished this course"
     "with ATU Galway, I will be able to implement many different programs which will make my tasks"
@@ -214,8 +214,16 @@ with open("project.txt", "a") as f:
     "\n\n Using the Iris data set as a base, it has shown me that I can take even the most basic of data,"
     "and create many different outputs and ways of reading it. I have completed a lot of research on Google"
     "whilst figuring out how to so certain aspects of this project\n and I have found so many useful"
-    "websites and platforms that can be used to improve my knowledge even after this course is finished.\n"
-    "In summary, "
+    "websites and platforms that can be used to improve my knowledge even after this course is finished.\n\n"
+    "In summary, I have not researched anyone else's analysis of this data set as I did not want to"
+    "cloud my own opinion of this data\n when seeing and working with it for the first time. "
+    "The code which is present in my project works very well with the iris data set\n and although"
+    "basic, the code can be adjusted for more complicated data sets. The outputs could be worked on so"
+    "\n that I can produce a histogram/plot/median sum etc. output for each and every variable in the data."
+    "I could introduce more complex code which compares\n many different types of variables and output"
+    "them in many different formats.\n\n In conclusion, the iris data set has opened my eyes to the"
+    "endless possibilities that python coding is capable of and I am excited to leanr more and\n"
+    "watch as technology evolves in the future."
    ]
    f.writelines(lines)
    f.close()
