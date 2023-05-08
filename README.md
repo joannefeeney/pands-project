@@ -36,16 +36,21 @@ http://archive.ics.uci.edu/ml/datasets/Iris
   the iris setosa and versicolor are closer in size.
 * The program then runs two scatter plots which display the petal length/width and also the sepal length/width for each species.
   These scatter plots appear in two separate figures, one is generated first and then the second is generated when the first is closed.
-  They provide a good visual of the differences in length/width of these species, with the species diapayed as different coloured dots.
+  They provide a good visual of the differences in length/width of these species, with the species displayed as different coloured dots.
 * The next section of code outputs four different histograms which display the different sizes in sepal length, sepal width,
-  petal length and petal width, while also displaying the frequency of such on the y axis. This is save to the repository after running as 
+  petal length and petal width, while also displaying the frequency of such on the y axis. This is saved to the repository after running as 
   histogram1.png. From this output, we can see for example that the sepal length of all species has the highest frequency at approximately 5.5cm in length.
 * Then the code outputs a histogram for each each of the variables of width/lenth for both the sepals and petals of all combined species.
-  The two histograms which display sepal data are in green and the two which dispolay petal data are in red. Again these are outpuptting individually and are
+  The two histograms which display sepal data are in green and the two which display petal data are in red. Again these are outputting individually and are
   saved as separate .png files once run and each is closed.
   From this data we can see for example in histogram5.png that a petal width of approximatley 0.2cm has the highest frequency with approximatley 33 petals
   displaying this width.
-* My code then genrates an image of the 3 species of iris, which also appears at the top of this README file.
+* My code then generates an image of the 3 species of iris, which also appears at the top of this README file.
+* Finally, the code creates a .txt summary file that appends the text that I have written to summarize this data set and the code I have written (and sourced).
+  The text is appended to a file call project.txt. I have left this code in append mode as I am making that assumption that my lecturer will be running my 
+  code himself and so will see the .txt file being created and appended to. If this was code I was creating for myself then I would not open the .txt file
+  in append mode. This text file summarizes my views on the data set and on the code and how it could be used in future by myself and adjusted to even be 
+  introducted for my own personal use in my workplace.
 
 
 ### References:
