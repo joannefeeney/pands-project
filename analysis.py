@@ -71,7 +71,7 @@ print(f"Data for the petal width of all iris species: \n""Sum:",sum_data4, "\nMe
 species_groups = df.groupby('Species')
 
 for species, data in species_groups:
-    print(f"Minimum and Maximum values for the {species} species:", "\n")
+    print(f"Minimum and Maximum values for the {species} species:")
     print(f"Sepal Length: min = {data['SepalLength'].min()}, max = {data['SepalLength'].max()}")
     print(f"Sepal Width: min = {data['SepalWidth'].min()}, max = {data['SepalWidth'].max()}")
     print(f"Petal Length: min = {data['PetalLength'].min()}, max = {data['PetalLength'].max()}")
