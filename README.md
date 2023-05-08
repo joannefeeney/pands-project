@@ -45,6 +45,7 @@ http://archive.ics.uci.edu/ml/datasets/Iris
   saved as separate .png files once run and each is closed.
   From this data we can see for example in histogram5.png that a petal width of approximatley 0.2cm has the highest frequency with approximatley 33 petals
   displaying this width.
+* My code then genrates an image of the 3 species of iris, which also appears at the top of this README file.
 
 
 ### References:
