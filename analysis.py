@@ -183,18 +183,7 @@ plt.savefig('histogram5.png')
 plt.show()
 GOOD
 '''
-
-# Code Source: https://pythonguides.com/python-write-variable-to-file/
-# Creating and writing to a file called project.txt
-# This code creates a set variable named "datasetname" with the value "Iris Dataset"
-datasetname = {"Iris Dataset"}
-# This line opens a file named "project.txt" in write mode (w)
-file = open("project.txt", "w")
-# This line uses string formatting to write the "datasetname" variable and its value to the file
-file.write("%s = %s\n" %("datasetname",datasetname))
-# This line closes the "project.txt" file
-file.close()
-
+'''
 # Code Source: https://www.askpython.com/python/examples/display-images-using-python
 # Adding image of iris'
 from matplotlib import image as mpimg
@@ -206,3 +195,30 @@ plt.ylabel("Y pixels scaling")
 image = mpimg.imread("irisx3.png")
 plt.imshow(image)
 plt.show()
+GOOD
+'''
+
+# Code Source: https://www.tutorialspoint.com/How-to-write-multiple-lines-in-text-file-using-Python
+# Creating and writing to a file called project.txt
+with open("project.txt", "a") as f:
+   lines = ["The well-known Fischers Iris data set can display to anyone new to learning code"
+    "(such as myself),\n that you can take basically any clean data set and compare every variable."
+    "You can create histograms and plots to make the data easier to view an compare.\n You can"
+    "add images to your code and README files to make it look nicer. You can compare only certain"
+    "parts of the data if you so wish.\n This piece of basic code that I have written (and copied"
+    "from certain references sources) conveys to me that python code can be used for so many purposes."
+    "\n I work in the tech field currently, but do not have any ICT degree and am completing this"
+    "course so I can expand my knowledge.\n I beleive that by the time I have finished this course"
+    "with ATU Galway, I will be able to implement many different programs which will make my tasks"
+    "in work,\n (many of which are manual) much smoother and will introduce much less room for human error."
+    "\n\n Using the Iris data set as a base, it has shown me that I can take even the most basic of data,"
+    "and create many different outputs and ways of reading it. I have completed a lot of research on Google"
+    "whilst figuring out how to so certain aspects of this project\n and I have found so many useful"
+    "websites and platforms that can be used to improve my knowledge even after this course is finished.\n"
+    "In summary, "
+   ]
+   f.writelines(lines)
+   f.close()
+
+# This line closes the "project.txt" file
+# file.close()
