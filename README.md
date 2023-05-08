@@ -28,18 +28,24 @@ http://archive.ics.uci.edu/ml/datasets/Iris
 
 ### Results:
 
-* First my python code outputs the details of the sum, mean and median of the combined iris data (all 3 species).
-* From the information that the program has calculated for us, we can see that there is a quite a difference in size (both length and width) 
+* First my python code outputs the details of the sum, mean and median of the iris data (all 3 species).
+  From the information that the program has calculated for us, we can see that there is a quite a difference in size (both length and width) 
   between the petals and the sepals.
 * Next the code outputs the minium and maximum value for each species of iris.
-* From this information, we can see that in general, the iris virginica species appears to be the largest and 
+  From this information, we can see that in general, the iris virginica species appears to be the largest and 
   the iris setosa and versicolor are closer in size.
-* The program then runs a two scatter plots which display the petal length/width and also the sepal length/width.
-  These scatter plots appear in two separate figures, one is generated first and hten the second is generated when the first is closed.
-  They allow for easier viewing of the differences in length/width of these species.
-* The next section of code outputs four different histograms which display the diffrence in height/width for
-  sepal length, sepal width,  petal length and petal width, while also displaying the frequency of such on the y axis.
-  From this output, we can see for example that the sepal length of all species has the highest frequency at approximately 5.5cm in length.
+* The program then runs two scatter plots which display the petal length/width and also the sepal length/width for each species.
+  These scatter plots appear in two separate figures, one is generated first and then the second is generated when the first is closed.
+  They provide a good visual of the differences in length/width of these species, with the species diapayed as different coloured dots.
+* The next section of code outputs four different histograms which display the different sizes in sepal length, sepal width,
+  petal length and petal width, while also displaying the frequency of such on the y axis. This is save to the repository after running as 
+  histogram1.png. From this output, we can see for example that the sepal length of all species has the highest frequency at approximately 5.5cm in length.
+* Then the code outputs a histogram for each each of the variables of width/lenth for both the sepals and petals of all combined species.
+  The two histograms which display sepal data are in green and the two which dispolay petal data are in red. Again these are outpuptting individually and are
+  saved as separate .png files once run and each is closed.
+  From this data we can see for example in histogram5.png that a petal width of approximatley 0.2cm has the highest frequency with approximatley 33 petals
+  displaying this width.
+
 
 ### References:
 
