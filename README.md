@@ -45,6 +45,7 @@ http://archive.ics.uci.edu/ml/datasets/Iris
   saved as separate .png files once run and each is closed.
   From this data we can see for example in histogram5.png that a petal width of approximatley 0.2cm has the highest frequency with approximatley 33 petals
   displaying this width.
+* My code then genrates an image of the 3 species of iris, which also appears at the top of this README file.
 
 
 ### References:
@@ -66,5 +67,7 @@ Kumar, Bijay, Python guides [https://pythonguides.com/python-write-variable-to-f
 Dhanalakshmi Srivani, Karpuram [https://www.analyticsvidhya.com/blog/2022/06/iris-flowers-classification-using-machine-learning/] (used for image of iris'), Last accessed 07/05/2023
 
 Rishi, Rishikesh Kumar, Tutorialspoint [https://www.tutorialspoint.com/how-to-save-a-histogram-plot-in-python#], Last accessed 07/05/2023
+
+Singh, Sarika, Tutorialspoint [https://www.tutorialspoint.com/How-to-write-multiple-lines-in-text-file-using-Python], Last accessed 08/05/2023
 
 Stack overflow [https://stackoverflow.com/questions/50088007/print-specific-rows-and-columns-in-pandas], [https://stackoverflow.com/questions/27405483/how-to-loop-over-grouped-pandas-dataframe], [https://stackoverflow.com/questions/72457668/how-do-i-save-multiple-histograms-to-different-separate-files], Last accessed 08/05/2023
