@@ -71,7 +71,8 @@ print(f"Data for the petal width of all iris species: \n""Sum:",sum_data4, "\nMe
 species_groups = df.groupby('Species')
 
 for species, data in species_groups:
-    print(f"Minimum and Maximum values for the {species} species:")
+    print(f"Minimum and Maximum values for the {species} species:"
+          )
     print(f"Sepal Length: min = {data['SepalLength'].min()}, max = {data['SepalLength'].max()}")
     print(f"Sepal Width: min = {data['SepalWidth'].min()}, max = {data['SepalWidth'].max()}")
     print(f"Petal Length: min = {data['PetalLength'].min()}, max = {data['PetalLength'].max()}")
@@ -201,7 +202,7 @@ with open("project.txt", "a") as f:
     "in work,\n (many of which are manual) much smoother and will introduce much less room for human error."
     "\n\n Using the Iris data set as a base, it has shown me that I can take even the most basic of data,"
     "and\n create many different outputs and ways of reading it. I have completed a lot of research on Google"
-    "whilst figuring out how to so certain aspects of this project\n and I have found so many useful"
+    "whilst figuring out how to do certain aspects of this project\n and I have found so many useful"
     "websites and platforms that can be used to improve my knowledge even after this course is finished.\n\n"
     "In summary, I have not researched anyone else's analysis of this data set as I did not want to"
     "cloud my own opinion of this data\n when seeing and working with it for the first time. "
